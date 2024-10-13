@@ -4,10 +4,15 @@
 #define MAX_N 50
 
 long long int fib(int n) {
-    if ( n <= 1) {
+    long long int nums[MAX_N+1] = {0, 1};
+    if (n <= 1)
         return n;
-    } 
-    return fib(n-1) + fib(n-2);
+
+    for(int i = 2; i <= n; i++) {
+        nums[i] = nums[i-1] + nums[i-2];
+    }
+
+    return nums[n];
 }
 
 int main() {

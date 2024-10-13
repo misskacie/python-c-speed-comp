@@ -1,0 +1,1 @@
+Simple example to show difference in speed between C and python for the same algorithm, and then the difference between different algorithms that achieve the same goal ie recursive fibonacci numbers vs memoized fibonacci numbers.
